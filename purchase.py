@@ -60,8 +60,7 @@ def purchase(List):
             print("PRODUCT\t\tPRICE\t\tQUANTITY")
             print("--------------------------------------------")
             for i in range(len(L)):
-                print(L[i][0], "\t\t", L[i][1], "\t\t", L[i][2], "\t\t", L[i][3], "\t\t", L[i][4], "\t\t", L[i][5], "\t\t",
-                      L[i][6])  # print, last updated product name, quantity and price.
+                print(L[i][0], "\t\t", L[i][1], "\t\t", L[i][2])  # print, last updated product name, quantity and price.
             print("--------------------------------------------")
 
     print("\nYou Choosed Items and it's Quantity respectively:\n", q, "\n")
