@@ -69,7 +69,7 @@ def purchase(List):
         In the following operation:
         1) change every string value in the upper case latter.
         2) check what is the product entered by customer.
-        3) executes respective condition if product is bacon or sausage or hotcakes entered by customer.
+        3) executes respective condition if product is bacon or burger or pizza entered by customer.
     '''
     f_amount = 0  # final amount
     for keys in q.keys():
@@ -79,42 +79,42 @@ def purchase(List):
             p_amount = (p_price * p_num)
             f_amount += (p_price * p_num)
             print("\nTotal cost for bacon: ", p_amount)
-        elif keys == L[1][0].upper():  # executes this operation if product is sausage entered by customer.
+        elif keys == L[1][0].upper():  # executes this operation if product is burger entered by customer.
             l_price = int(L[1][1])
             l_num = int(q[keys])
             l_amount = (l_price * l_num)
             f_amount += (l_price * l_num)
-            print("Total cost for sausage: ", l_amount)
-        elif keys == L[1][0].upper():  # executes this operation if product is sausage entered by customer.
+            print("Total cost for burger: ", l_amount)
+        elif keys == L[1][0].upper():  # executes this operation if product is burger entered by customer.
             a_price = int(L[1][1])
             a_num = int(q[keys])
             a_amount = (a_price * a_num)
             f_amount += (a_price * a_num)
-            print("Total cost for burrito: ", l_amount)
-        elif keys == L[1][0].upper():  # executes this operation if product is sausage entered by customer.
+            print("Total cost for fries: ", l_amount)
+        elif keys == L[1][0].upper():  # executes this operation if product is burger entered by customer.
             b_price = int(L[1][1])
             b_num = int(q[keys])
             b_amount = (b_price * b_num)
             f_amount += (b_price * b_num)
             print("Total cost for coke: ", l_amount)
-        elif keys == L[1][0].upper():  # executes this operation if product is sausage entered by customer.
+        elif keys == L[1][0].upper():  # executes this operation if product is burger entered by customer.
             c_price = int(L[1][1])
             c_num = int(q[keys])
             c_amount = (c_price * c_num)
             f_amount += (c_price * c_num)
-            print("Total cost for oatmeal: ", l_amount)
-        elif keys == L[1][0].upper():  # executes this operation if product is sausage entered by customer.
+            print("Total cost for momos: ", l_amount)
+        elif keys == L[1][0].upper():  # executes this operation if product is burger entered by customer.
             d_price = int(L[1][1])
             d_num = int(q[keys])
             d_amount = (d_price * d_num)
             f_amount += (d_price * d_num)
             print("Total cost for mccafe: ", l_amount)    
-        else:  # executes this operation if product is hotcakes entered by customer.
+        else:  # executes this operation if product is pizza entered by customer.
             h_price = int(L[2][1])
             h_num = int(q[keys])
             h_amount = (h_price * h_num)
             f_amount += (h_price * h_num)
-            print("Total cost for HOTCAKES: ", h_amount)
+            print("Total cost for PIZZA: ", h_amount)
     print("\nYour discountable total amount is: ", f_amount)
 
     '''
@@ -193,24 +193,24 @@ def purchase(List):
         if keys == "BACON":
             file.write(
                 str("\n" + str(keys) + " \t\t " + str(q['BACON']) + " \t\t " + str(L[0][1]) + " \t\t " + str(p_amount)))
-        elif keys == "SAUSAGE":
+        elif keys == "BURGER":
             file.write(str(
-                "\n" + str(keys) + " \t\t " + str(q['SAUSAGE']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
-        elif keys == "BURRITO":
+                "\n" + str(keys) + " \t\t " + str(q['BURGER']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "FRIES":
             file.write(str(
-                "\n" + str(keys) + " \t\t " + str(q['BURRITO']) + " \t\t " + str(L[2][1]) + " \t\t " + str(a_amount)))
+                "\n" + str(keys) + " \t\t " + str(q['FRIES']) + " \t\t " + str(L[2][1]) + " \t\t " + str(a_amount)))
         elif keys == "COKE":
             file.write(str(
                 "\n" + str(keys) + " \t\t " + str(q['COKE']) + " \t\t " + str(L[3][1]) + " \t\t " + str(b_amount)))
-        elif keys == "OATMEAL":
+        elif keys == "MOMOS":
             file.write(str(
-                "\n" + str(keys) + " \t\t " + str(q['OATMEAL']) + " \t\t " + str(L[4][1]) + " \t\t " + str(c_amount)))
+                "\n" + str(keys) + " \t\t " + str(q['MOMOS']) + " \t\t " + str(L[4][1]) + " \t\t " + str(c_amount)))
         elif keys == "MCCAFE":
             file.write(str(
                 "\n" + str(keys) + " \t\t " + str(q['MCCAFE']) + " \t\t " + str(L[5][1]) + " \t\t " + str(d_amount)))
         else:
             file.write(
-                str("\n" + str(keys) + " \t\t " + str(q['HOTCAKES']) + " \t\t " + str(L[6][1]) + " \t\t " + str(h_amount)))
+                str("\n" + str(keys) + " \t\t " + str(q['PIZZA']) + " \t\t " + str(L[6][1]) + " \t\t " + str(h_amount)))
 
     file.write("\n\n-------------------------------------------------------------")
     file.write("\n\t\t\tYour discountable amount: " + str(f_amount))

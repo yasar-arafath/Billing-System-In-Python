@@ -8,7 +8,7 @@
 ***
 
 ## (Full Documentation)
-It is tied in with composing a program in python of an Buy&Get store that offers Buy&Get machines like bacon, sausage and HOTCAKES etc.
+It is tied in with composing a program in python of an Buy&Get store that offers Buy&Get machines like bacon, burger and PIZZA etc.
 
 ## Purpose
 The primary motivation behind composing this coursework is to build up a program in python, utilizing loop concept as well as file read and write for the given scenario of an Buy&Get store. It ought to likewise module algorithm, pseudocode, flowchart and data structure of the program.
@@ -75,10 +75,10 @@ Algorithm write(List,Dictionary):
     for keys in d.keys():
         If keys is equals to"BACON" then
             L[0][2] is set to str(int(L[0][2])-d['BACON']) 
-        else if  keys is equals to"SAUSAGE" then
-            L[1][2] is set to str(int(L[1][2])-d['SAUSAGE']) 
+        else if  keys is equals to"BURGER" then
+            L[1][2] is set to str(int(L[1][2])-d['BURGER']) 
         else:
-            L[2][2] is set to str(int(L[2][2])-d['HOTCAKES'
+            L[2][2] is set to str(int(L[2][2])-d['PIZZA'
     output(L)
         
     files is set to open("products.txt","w")  
@@ -167,7 +167,7 @@ algorithm purchase(List):
             l_num is set to int(q[keys])
             l_amount is set to (l_price *number2)
             f_amount + is set to (l_price *number2)
-            output ("Total cost for sausage: ",l_amount)
+            output ("Total cost for burger: ",l_amount)
         else:                        .
             h_price is set to int(L[2][1])
             h_num is set to int(q[keys])
@@ -216,10 +216,10 @@ write in file for invoice
     for keys in q.keys():           #In this loop, write in a file only those product which is purchase by user.
         if key is equal to "BACON":
             write on a file (str("\n"+str(keys)+" \t\t "+str(q['BACON'])+" \t\t "+str(L[0][1])+" \t\t "+str(p_amount)))
-        elif keys is equal to "SAUSAGE":
-            write on a file (str("\n"+str(keys)+" \t\t "+str(q['SAUSAGE'])+" \t\t "+str(L[1][1])+" \t\t "+str(l_amount)))
+        elif keys is equal to "BURGER":
+            write on a file (str("\n"+str(keys)+" \t\t "+str(q['BURGER'])+" \t\t "+str(L[1][1])+" \t\t "+str(l_amount)))
         else: 
-            write on a file (str("\n"+str(keys)+" \t\t "+str(q['HOTCAKES'])+" \t\t "+str(L[2][1])+" \t\t "+str(h_amount)))
+            write on a file (str("\n"+str(keys)+" \t\t "+str(q['PIZZA'])+" \t\t "+str(L[2][1])+" \t\t "+str(h_amount)))
     write on a file ("\n\t\t\tYour discountable amount: "+str(f_amount))
     write on a file ("\n\t\t   Your "+str(discount)+"% discounted amount is: "+str(dis))
     write on a file ("\n\t\t\t Your payable amount is: "+str(total))
@@ -250,7 +250,7 @@ This python program creating an invoice after every purchase an it can update in
 This is a modular programming method. This programming is done by creating a different module into functions and files. This helps to understand the program and easy to accessible. For this program, I divided four different module which are as follows;
 - read.py: in this read module, read_file function works on file as read mode and it creates an empty list. In that empty list, stored data from text file which have some data of store.
 - purchase.py: In this module, it brings a list from read module. And ask the question for what product do want to purchase customer. Similarly, ask for quantity for that product. When user entered value are matched in the list and execute the calculation for choose product. After than ask the discount percentage, when these all operation done then purchase module act on invoice. Finally, it creates a unique invoice for purchase. 
-- write.py: In this module, after each purchase it collect data from purchase and update in stock file(products.txt). for example, customer purchase 10 sausage out of 50 then update stock file will must be remaining 40 sausages only.
+- write.py: In this module, after each purchase it collect data from purchase and update in stock file(products.txt). for example, customer purchase 10 burger out of 50 then update stock file will must be remaining 40 burgers only.
 - Main.py: This module collects all information and data from remaining three modules and execute from here.
 
 ## Testing

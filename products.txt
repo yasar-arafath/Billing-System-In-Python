@@ -1,7 +1,7 @@
 bacon,200,40
-sausage,900,40
-hotcakes,200,20
-burrito,100,40
+burger,900,40
+pizza,200,20
+fries,100,40
 coke,500,20
-oatmeal,200,20
+momos,200,20
 mccafe,400,20

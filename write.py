@@ -8,18 +8,18 @@ def over_write(List, Dictionary):   # an overwrite function
     for keys in d.keys():
         if keys == "BACON":
             L[0][2] = str(int(L[0][2])-d['BACON'])
-        elif keys == "SAUSAGE":
-            L[1][2] = str(int(L[1][2])-d['SAUSAGE'])
-        elif keys == "BURRITO":
-            L[2][2] = str(int(L[2][2])-d['BURRITO'])
+        elif keys == "BURGER":
+            L[1][2] = str(int(L[1][2])-d['BURGER'])
+        elif keys == "FRIES":
+            L[2][2] = str(int(L[2][2])-d['FRIES'])
         elif keys == "COKE":
             L[3][2] = str(int(L[3][2])-d['COKE'])
-        elif keys == "OATMEAL":
-            L[4][2] = str(int(L[4][2])-d['OATMEAL'])
+        elif keys == "MOMOS":
+            L[4][2] = str(int(L[4][2])-d['MOMOS'])
         elif keys == "MCCAFE":
             L[5][2] = str(int(L[5][2])-d['MCCAFE'])
         else:
-            L[6][2] = str(int(L[6][2])-d['HOTCAKES'])
+            L[6][2] = str(int(L[6][2])-d['PIZZA'])
     print("\nRemaining Stock Products:\n",L)
         
     files = open("products.txt", "w")  # opens stock file (products.txt) file in write mode.
