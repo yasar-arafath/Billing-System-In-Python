@@ -1,4 +1,4 @@
-# Inventory Management System in Python (McDonald's Store)
+# Inventory Management System in Python (Buy&Get Store)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4118113.svg)](https://doi.org/10.5281/zenodo.4118113)
 
 ***
@@ -8,10 +8,10 @@
 ***
 
 ## (Full Documentation)
-It is tied in with composing a program in python of an McDonald's store that offers McDonald's machines like bacon, sausage and HOTCAKES etc.
+It is tied in with composing a program in python of an Buy&Get store that offers Buy&Get machines like bacon, sausage and HOTCAKES etc.
 
 ## Purpose
-The primary motivation behind composing this coursework is to build up a program in python, utilizing loop concept as well as file read and write for the given scenario of an McDonald's store. It ought to likewise module algorithm, pseudocode, flowchart and data structure of the program.
+The primary motivation behind composing this coursework is to build up a program in python, utilizing loop concept as well as file read and write for the given scenario of an Buy&Get store. It ought to likewise module algorithm, pseudocode, flowchart and data structure of the program.
 ## Problem statement
 The issue offered was to build up an application which read the text document and show the data accessible. After that the program should to create a invoice for a customer or consumer, with each purchase of the given item. Likewise, after each purchase of some products the stock should be refreshed in same text file.
 ## Aim and objectives
@@ -65,7 +65,7 @@ Lets hope, you will get this product after next shopping
 - Step 15:	 End.
 
 ## Flowchart
-![Flowchart](https://github.com/khillsman3/McDonald's_Store_Python_Program/raw/master/Flowchart "Flowchart")
+![Flowchart](https://github.com/khillsman3/Buy&Get_Store_Python_Program/raw/master/Flowchart "Flowchart")
 
 ## Pseudocode for write.py
 ```python
@@ -209,7 +209,7 @@ discount is 0.0
 import date and time from current device
 open file (invoice+" ("+a_name+").txt","w")  #unique file name open it on writing mode
 write in file for invoice
-    write on a file ("\nMcDonald's STORE\t\t\t\tINVOICE")
+    write on a file ("\nBuy&Get STORE\t\t\t\tINVOICE")
     write on a file ("\n\nInvoice: "+invoice+"\t\tDate: "+d+"\n\t\t\t\t\tTime: "+e+"")
     write on a file ("\nName of Customer: "+str(a_name)+"")
     write on a file ("\nPARTICULAR\tQUANTITY\tUNIT PRICE\tTOTAL")                               
@@ -258,7 +258,7 @@ Testing is the technique where we check our program for program gives the expect
 + test case not found
 
 ## Conclusion
-This coursework has helped me to explore more in python programming language. I learnt that python programming is a great degree valuable apparatuses to manufacture and create many projects and programming. The stock administration framework is valuable as it keeps the record of the item in the McDonald's store and in addition it causes client to screen their buy. 
+This coursework has helped me to explore more in python programming language. I learnt that python programming is a great degree valuable apparatuses to manufacture and create many projects and programming. The stock administration framework is valuable as it keeps the record of the item in the Buy&Get store and in addition it causes client to screen their buy. 
 
 Similarly, it has helped me to achieve the new level of the imagination and have given me the certainty to grow more projects and to improve my programming abilities and skills as well as to improve my programming understanding level. After a great deal of diligent work and research, at long last calculation and flowchart were made which would give the peruse a basic perception of the program, clear comprehension of the code and how the program is running. After the consummation of the coursework it was important to guarantee that it was bug and mistake free, such a significant number of test were done which affirmed that the projects were prepared to use in the genuine situation and can be refreshed if necessary in future. 
 
@@ -268,9 +268,9 @@ Hence indisputably, the coursework has been an amazing help to learn and get the
 
 
 ## Picture Evidence
-![Picture Evidence (Testing sample)](https://github.com/khillsman3/McDonald's_Store_Python_Program/raw/master/py.JPG "Black Box Testing")
+![Picture Evidence (Testing sample)](https://github.com/khillsman3/Buy&Get_Store_Python_Program/raw/master/py.JPG "Black Box Testing")
 
-![Picture Evidence (Black Box Testing)](https://github.com/khillsman3/McDonald's_Store_Python_Program/raw/master/pyy.JPG "Generated invoice")
+![Picture Evidence (Black Box Testing)](https://github.com/khillsman3/Buy&Get_Store_Python_Program/raw/master/pyy.JPG "Generated invoice")
 
 ****
 [back to repo](https://github.com/indraoli429/Billing-System-In-Python)
