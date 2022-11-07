@@ -60,8 +60,8 @@ def purchase(List):
             print("PRODUCT\t\tPRICE\t\tQUANTITY")
             print("--------------------------------------------")
             for i in range(len(L)):
-                print(L[i][0], "\t\t", L[i][1], "\t\t",
-                      L[i][2])  # print, last updated product name, quantity and price.
+                print(L[i][0], "\t\t", L[i][1], "\t\t", L[i][2], "\t\t", L[i][3], "\t\t", L[i][4], "\t\t", L[i][5], "\t\t",
+                      L[i][6])  # print, last updated product name, quantity and price.
             print("--------------------------------------------")
 
     print("\nYou Choosed Items and it's Quantity respectively:\n", q, "\n")
@@ -196,21 +196,21 @@ def purchase(List):
         elif keys == "BURGER":
             file.write(str(
                 "\n" + str(keys) + " \t\t " + str(q['BURGER']) + " \t\t " + str(L[1][1]) + " \t\t " + str(l_amount)))
+        elif keys == "PIZZA":
+            file.write(str(
+                "\n" + str(keys) + " \t\t " + str(q['PIZZA']) + " \t\t " + str(L[2][1]) + " \t\t " + str(a_amount)))
         elif keys == "FRIES":
             file.write(str(
-                "\n" + str(keys) + " \t\t " + str(q['FRIES']) + " \t\t " + str(L[2][1]) + " \t\t " + str(a_amount)))
+                "\n" + str(keys) + " \t\t " + str(q['FRIES']) + " \t\t " + str(L[3][1]) + " \t\t " + str(b_amount)))
         elif keys == "COKE":
             file.write(str(
-                "\n" + str(keys) + " \t\t " + str(q['COKE']) + " \t\t " + str(L[3][1]) + " \t\t " + str(b_amount)))
+                "\n" + str(keys) + " \t\t " + str(q['COKE']) + " \t\t " + str(L[4][1]) + " \t\t " + str(c_amount)))
         elif keys == "MOMOS":
             file.write(str(
-                "\n" + str(keys) + " \t\t " + str(q['MOMOS']) + " \t\t " + str(L[4][1]) + " \t\t " + str(c_amount)))
-        elif keys == "MCCAFE":
-            file.write(str(
-                "\n" + str(keys) + " \t\t " + str(q['MCCAFE']) + " \t\t " + str(L[5][1]) + " \t\t " + str(d_amount)))
+                "\n" + str(keys) + " \t\t " + str(q['MOMOS']) + " \t\t " + str(L[5][1]) + " \t\t " + str(d_amount)))
         else:
             file.write(
-                str("\n" + str(keys) + " \t\t " + str(q['PIZZA']) + " \t\t " + str(L[6][1]) + " \t\t " + str(h_amount)))
+                str("\n" + str(keys) + " \t\t " + str(q['MCCAFE']) + " \t\t " + str(L[6][1]) + " \t\t " + str(h_amount)))
 
     file.write("\n\n-------------------------------------------------------------")
     file.write("\n\t\t\tYour discountable amount: " + str(f_amount))
