@@ -85,36 +85,36 @@ def purchase(List):
             l_amount = (l_price * l_num)
             f_amount += (l_price * l_num)
             print("Total cost for burger: ", l_amount)
-        elif keys == L[1][0].upper():  # executes this operation if product is burger entered by customer.
-            a_price = int(L[1][1])
+        elif keys == L[2][0].upper():  # executes this operation if product is burger entered by customer.
+            a_price = int(L[2][1])
             a_num = int(q[keys])
             a_amount = (a_price * a_num)
             f_amount += (a_price * a_num)
-            print("Total cost for fries: ", l_amount)
-        elif keys == L[1][0].upper():  # executes this operation if product is burger entered by customer.
-            b_price = int(L[1][1])
+            print("Total cost for fries: ", a_amount)
+        elif keys == L[3][0].upper():  # executes this operation if product is burger entered by customer.
+            b_price = int(L[3][1])
             b_num = int(q[keys])
             b_amount = (b_price * b_num)
             f_amount += (b_price * b_num)
-            print("Total cost for coke: ", l_amount)
-        elif keys == L[1][0].upper():  # executes this operation if product is burger entered by customer.
-            c_price = int(L[1][1])
+            print("Total cost for coke: ", b_amount)
+        elif keys == L[4][0].upper():  # executes this operation if product is burger entered by customer.
+            c_price = int(L[4][1])
             c_num = int(q[keys])
             c_amount = (c_price * c_num)
             f_amount += (c_price * c_num)
-            print("Total cost for momos: ", l_amount)
-        elif keys == L[1][0].upper():  # executes this operation if product is burger entered by customer.
-            d_price = int(L[1][1])
+            print("Total cost for momos: ", c_amount)
+        elif keys == L[5][0].upper():  # executes this operation if product is burger entered by customer.
+            d_price = int(L[5][1])
             d_num = int(q[keys])
             d_amount = (d_price * d_num)
             f_amount += (d_price * d_num)
-            print("Total cost for mccafe: ", l_amount)    
+            print("Total cost for mccafe: ", d_amount)    
         else:  # executes this operation if product is pizza entered by customer.
-            h_price = int(L[2][1])
+            h_price = int(L[6][1])
             h_num = int(q[keys])
             h_amount = (h_price * h_num)
             f_amount += (h_price * h_num)
-            print("Total cost for PIZZA: ", h_amount)
+            print("Total cost for pizza: ", h_amount)
     print("\nYour discountable total amount is: ", f_amount)
 
     '''
