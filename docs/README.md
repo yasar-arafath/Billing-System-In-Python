@@ -1,4 +1,4 @@
-# Inventory Management System in Python (Electronic Store)
+# Inventory Management System in Python (McDonald's Store)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4118113.svg)](https://doi.org/10.5281/zenodo.4118113)
 
 ***
@@ -8,10 +8,10 @@
 ***
 
 ## (Full Documentation)
-It is tied in with composing a program in python of an electronic store that offers electronic machines like phone, laptop and HDD etc.
+It is tied in with composing a program in python of an McDonald's store that offers McDonald's machines like bacon, sausage and HOTCAKES etc.
 
 ## Purpose
-The primary motivation behind composing this coursework is to build up a program in python, utilizing loop concept as well as file read and write for the given scenario of an electronic store. It ought to likewise module algorithm, pseudocode, flowchart and data structure of the program.
+The primary motivation behind composing this coursework is to build up a program in python, utilizing loop concept as well as file read and write for the given scenario of an McDonald's store. It ought to likewise module algorithm, pseudocode, flowchart and data structure of the program.
 ## Problem statement
 The issue offered was to build up an application which read the text document and show the data accessible. After that the program should to create a invoice for a customer or consumer, with each purchase of the given item. Likewise, after each purchase of some products the stock should be refreshed in same text file.
 ## Aim and objectives
@@ -65,7 +65,7 @@ Lets hope, you will get this product after next shopping
 - Step 15:	 End.
 
 ## Flowchart
-![Flowchart](https://github.com/khillsman3/Electronic_Store_Python_Program/raw/master/Flowchart "Flowchart")
+![Flowchart](https://github.com/khillsman3/McDonald's_Store_Python_Program/raw/master/Flowchart "Flowchart")
 
 ## Pseudocode for write.py
 ```python
@@ -73,12 +73,12 @@ Algorithm write(List,Dictionary):
    L is set to List # list was assigned to 'L' variable
     d is set to Dictionary 
     for keys in d.keys():
-        If keys is equals to"PHONE" then
-            L[0][2] is set to str(int(L[0][2])-d['PHONE']) 
-        else if  keys is equals to"LAPTOP" then
-            L[1][2] is set to str(int(L[1][2])-d['LAPTOP']) 
+        If keys is equals to"BACON" then
+            L[0][2] is set to str(int(L[0][2])-d['BACON']) 
+        else if  keys is equals to"SAUSAGE" then
+            L[1][2] is set to str(int(L[1][2])-d['SAUSAGE']) 
         else:
-            L[2][2] is set to str(int(L[2][2])-d['HDD'
+            L[2][2] is set to str(int(L[2][2])-d['HOTCAKES'
     output(L)
         
     files is set to open("products.txt","w")  
@@ -161,13 +161,13 @@ algorithm purchase(List):
             p_num is set to int(q[keys])
             p_amount is set to (p_price *number1)
             f_amount+ is set to (p_price *number1)
-            output ("\nTotal cost for phone: ",p_amount) 
+            output ("\nTotal cost for bacon: ",p_amount) 
         else If  keys is equals to L[1][0] in upper case: 
             l_price  is set to int(L[1][1])
             l_num is set to int(q[keys])
             l_amount is set to (l_price *number2)
             f_amount + is set to (l_price *number2)
-            output ("Total cost for laptop: ",l_amount)
+            output ("Total cost for sausage: ",l_amount)
         else:                        .
             h_price is set to int(L[2][1])
             h_num is set to int(q[keys])
@@ -209,17 +209,17 @@ discount is 0.0
 import date and time from current device
 open file (invoice+" ("+a_name+").txt","w")  #unique file name open it on writing mode
 write in file for invoice
-    write on a file ("\nELECTRONIC STORE\t\t\t\tINVOICE")
+    write on a file ("\nMcDonald's STORE\t\t\t\tINVOICE")
     write on a file ("\n\nInvoice: "+invoice+"\t\tDate: "+d+"\n\t\t\t\t\tTime: "+e+"")
     write on a file ("\nName of Customer: "+str(a_name)+"")
     write on a file ("\nPARTICULAR\tQUANTITY\tUNIT PRICE\tTOTAL")                               
     for keys in q.keys():           #In this loop, write in a file only those product which is purchase by user.
-        if key is equal to "PHONE":
-            write on a file (str("\n"+str(keys)+" \t\t "+str(q['PHONE'])+" \t\t "+str(L[0][1])+" \t\t "+str(p_amount)))
-        elif keys is equal to "LAPTOP":
-            write on a file (str("\n"+str(keys)+" \t\t "+str(q['LAPTOP'])+" \t\t "+str(L[1][1])+" \t\t "+str(l_amount)))
+        if key is equal to "BACON":
+            write on a file (str("\n"+str(keys)+" \t\t "+str(q['BACON'])+" \t\t "+str(L[0][1])+" \t\t "+str(p_amount)))
+        elif keys is equal to "SAUSAGE":
+            write on a file (str("\n"+str(keys)+" \t\t "+str(q['SAUSAGE'])+" \t\t "+str(L[1][1])+" \t\t "+str(l_amount)))
         else: 
-            write on a file (str("\n"+str(keys)+" \t\t "+str(q['HDD'])+" \t\t "+str(L[2][1])+" \t\t "+str(h_amount)))
+            write on a file (str("\n"+str(keys)+" \t\t "+str(q['HOTCAKES'])+" \t\t "+str(L[2][1])+" \t\t "+str(h_amount)))
     write on a file ("\n\t\t\tYour discountable amount: "+str(f_amount))
     write on a file ("\n\t\t   Your "+str(discount)+"% discounted amount is: "+str(dis))
     write on a file ("\n\t\t\t Your payable amount is: "+str(total))
@@ -250,7 +250,7 @@ This python program creating an invoice after every purchase an it can update in
 This is a modular programming method. This programming is done by creating a different module into functions and files. This helps to understand the program and easy to accessible. For this program, I divided four different module which are as follows;
 - read.py: in this read module, read_file function works on file as read mode and it creates an empty list. In that empty list, stored data from text file which have some data of store.
 - purchase.py: In this module, it brings a list from read module. And ask the question for what product do want to purchase customer. Similarly, ask for quantity for that product. When user entered value are matched in the list and execute the calculation for choose product. After than ask the discount percentage, when these all operation done then purchase module act on invoice. Finally, it creates a unique invoice for purchase. 
-- write.py: In this module, after each purchase it collect data from purchase and update in stock file(products.txt). for example, customer purchase 10 laptop out of 50 then update stock file will must be remaining 40 laptops only.
+- write.py: In this module, after each purchase it collect data from purchase and update in stock file(products.txt). for example, customer purchase 10 sausage out of 50 then update stock file will must be remaining 40 sausages only.
 - Main.py: This module collects all information and data from remaining three modules and execute from here.
 
 ## Testing
@@ -258,7 +258,7 @@ Testing is the technique where we check our program for program gives the expect
 + test case not found
 
 ## Conclusion
-This coursework has helped me to explore more in python programming language. I learnt that python programming is a great degree valuable apparatuses to manufacture and create many projects and programming. The stock administration framework is valuable as it keeps the record of the item in the electronic store and in addition it causes client to screen their buy. 
+This coursework has helped me to explore more in python programming language. I learnt that python programming is a great degree valuable apparatuses to manufacture and create many projects and programming. The stock administration framework is valuable as it keeps the record of the item in the McDonald's store and in addition it causes client to screen their buy. 
 
 Similarly, it has helped me to achieve the new level of the imagination and have given me the certainty to grow more projects and to improve my programming abilities and skills as well as to improve my programming understanding level. After a great deal of diligent work and research, at long last calculation and flowchart were made which would give the peruse a basic perception of the program, clear comprehension of the code and how the program is running. After the consummation of the coursework it was important to guarantee that it was bug and mistake free, such a significant number of test were done which affirmed that the projects were prepared to use in the genuine situation and can be refreshed if necessary in future. 
 
@@ -268,9 +268,9 @@ Hence indisputably, the coursework has been an amazing help to learn and get the
 
 
 ## Picture Evidence
-![Picture Evidence (Testing sample)](https://github.com/khillsman3/Electronic_Store_Python_Program/raw/master/py.JPG "Black Box Testing")
+![Picture Evidence (Testing sample)](https://github.com/khillsman3/McDonald's_Store_Python_Program/raw/master/py.JPG "Black Box Testing")
 
-![Picture Evidence (Black Box Testing)](https://github.com/khillsman3/Electronic_Store_Python_Program/raw/master/pyy.JPG "Generated invoice")
+![Picture Evidence (Black Box Testing)](https://github.com/khillsman3/McDonald's_Store_Python_Program/raw/master/pyy.JPG "Generated invoice")
 
 ****
 [back to repo](https://github.com/indraoli429/Billing-System-In-Python)

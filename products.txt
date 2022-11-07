@@ -1,3 +1,7 @@
-Phone,200,40
-laptop,900,40
-HDD,200,20
+bacon,200,40
+sausage,900,40
+hotcakes,200,20
+burrito,100,40
+coke,500,20
+oatmeal,200,20
+mccafe,400,20
